@@ -49,11 +49,11 @@ with row3[0]:
 st.subheader("Delinquency Details")
 row4 = st.columns(3)
 with row4[0]:
-    delinquent_months= st.number_input('Delinquent Months', min_value=0, max_value=100, step=1, value=6)
+    delinquent_months= st.number_input('Delinquent Months', min_value=0, max_value=100, step=1, value=6, help="Number of months the borrower has missed or delayed loan payments")
 with row4[1]:
     loan_tenure_months = st.number_input('Loan Tenure (months)', min_value=0, step=1, value=36)
 with row4[2]:
-    total_dpd = st.number_input('Total DPD', min_value=0, value=30)
+    total_dpd = st.number_input('Total DPD', min_value=0, value=30, help="Total number of days the borrower has been late on payments across all loans")
 
 row5 = st.columns(3)
 with row5[0]:
