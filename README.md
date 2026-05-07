@@ -2,7 +2,7 @@
 
 An end-to-end machine learning project that predicts the **probability of loan default** for retail banking applicants, and translates it into an interpretable **credit score (300–900)** and **risk rating**.
 
-🔗 **Live Demo:** [https://ml-credit-risk-predict.streamlit.app/]  
+🔗 **Live Demo:** [ml-credit-risk-predict.streamlit.app](https://ml-credit-risk-predict.streamlit.app/)  
 📁 **Repo:** [github.com/shafiimran/ml_credit_risk_predictor](https://github.com/shafiimran/ml_credit_risk_predictor)
 
 ---
