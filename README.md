@@ -57,6 +57,22 @@ Selected for strong performance and interpretability (model coefficients as feat
 
 ### 6. Model Evaluation
 
+**Classification Report — Final Model (Logistic Regression + SMOTETomek + Optuna)**
+
+| Class | Precision | Recall | F1-Score | Support |
+|---|---|---|---|---|
+| 0 — Non-Default | 0.99 | 0.93 | 0.96 | 11,423 |
+| 1 — Default | 0.55 | 0.94 | 0.70 | 1,074 |
+| Accuracy | | | **0.93** | 12,497 |
+| Macro Avg | 0.77 | 0.94 | 0.83 | 12,497 |
+| Weighted Avg | 0.96 | 0.93 | 0.94 | 12,497 |
+
+> The model achieves a **recall of 0.94 on defaulters** — correctly flagging 94% of
+> actual defaults, which is the priority metric in credit risk. High precision on
+> non-defaults (0.99) ensures low-risk applicants are not wrongly rejected.
+
+**Rank-Ordering & Discrimination Metrics**
+
 | Metric | Value |
 |---|---|
 | AUC | **0.98** |
@@ -65,6 +81,7 @@ Selected for strong performance and interpretability (model coefficients as feat
 
 - KS in top 3 deciles and above 40 — meets industry benchmark for a strong credit risk model
 - Decile 9 captures **72% of all defaulters**, confirming strong rank ordering
+- Top 2 deciles cumulatively capture **98.6% of all defaulters**
 
 ### 7. Credit Scorecard
 
